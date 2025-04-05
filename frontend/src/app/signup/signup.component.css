@@ -1,0 +1,77 @@
+/* Custom Container */
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  /* Title Styling */
+  .custom-title {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Styling */
+  .custom-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Form Label Styling */
+  .custom-label {
+    color: #555;
+    font-weight: 500;
+  }
+  
+  /* Input Styling */
+  .custom-input {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .custom-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button Styling */
+  .custom-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Login Link Styling */
+  .custom-login-link {
+    color: #007bff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .custom-login-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  

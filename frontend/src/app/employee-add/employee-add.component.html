@@ -1,5 +1,11 @@
 <div class="container mt-4">
   <h2 class="text-center mb-4">Add Employee</h2>
+
+  <!-- Displaying Error Message -->
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
   <form (ngSubmit)="save()" class="w-50 mx-auto">
     <div class="form-group mb-3">
       <label>First Name:</label>

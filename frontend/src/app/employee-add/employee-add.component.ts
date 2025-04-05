@@ -49,6 +49,7 @@ export class EmployeeAddComponent {
   date_of_joining = '';
   department = '';
   employee_photo = ''; // Base64 string
+  errorMessage: string = ''; // To store any error messages
 
   constructor(private apollo: Apollo, private router: Router) {}
 
@@ -77,8 +78,14 @@ export class EmployeeAddComponent {
         department: this.department,
         employee_photo: this.employee_photo || ''
       }
-    }).subscribe(() => {
-      this.router.navigate(['/employees']);
+    }).subscribe({
+      next: () => {
+        this.router.navigate(['/employees']);
+      },
+      error: (err) => {
+        // Capture any errors and set error message
+        this.errorMessage = err?.graphQLErrors?.[0]?.message || 'An unexpected error occurred';
+      }
     });
   }
 

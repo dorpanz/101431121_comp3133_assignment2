@@ -1,21 +1,21 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
-    <div class="col-md-6">
-      <h2 class="text-center mb-4">Login</h2>
-      <form (ngSubmit)="login()" class="card p-4 shadow-sm">
+    <div class="col-md-6 col-lg-4">
+      <h2 class="text-center mb-4 custom-title">Login</h2>
+      <form (ngSubmit)="login()" class="custom-card p-4 shadow-lg border-0">
         <div class="mb-3">
-          <label class="form-label">Username</label>
-          <input class="form-control" [(ngModel)]="username" name="username" placeholder="Username" required />
+          <label class="form-label custom-label">Username</label>
+          <input class="form-control custom-input" [(ngModel)]="username" name="username" placeholder="Username" required />
         </div>
         <div class="mb-3">
-          <label class="form-label">Password</label>
-          <input class="form-control" [(ngModel)]="password" name="password" type="password" placeholder="Password" required />
+          <label class="form-label custom-label">Password</label>
+          <input class="form-control custom-input" [(ngModel)]="password" name="password" type="password" placeholder="Password" required />
         </div>
-        <button type="submit" class="btn btn-success w-100">Login</button>
+        <button type="submit" class="btn custom-btn w-100">Login</button>
         <div *ngIf="error" class="text-danger mt-3 text-center">{{ error }}</div>
       </form>
       <div class="text-center mt-3">
-        <a routerLink="/signup">Don't have an account? Sign up</a>
+        <a routerLink="/signup" class="custom-signup-link">Don't have an account? Sign up</a>
       </div>
     </div>
   </div>
