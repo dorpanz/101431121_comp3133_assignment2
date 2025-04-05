@@ -12,8 +12,7 @@ https://101431121-comp3133-assignment2.vercel.app/login
 https://101431121-comp3133-assignment2-production.up.railway.app/graphql
 
 # Sample Login:
-destowq
-password1234
+destowq - password1234
 
 # COMP3133_Assignment2
  The goal of the assignment is to build a frontend application using Angular that communicates with a GraphQL backend. The application allows for user authentication, employee management (CRUD operations), search functionality, and file uploads.
